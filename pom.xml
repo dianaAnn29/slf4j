@@ -6,7 +6,7 @@
 
   <groupId>org.slf4j</groupId>
   <artifactId>slf4j-parent</artifactId>
-  <version>1.7.36</version>
+  <version>1.7.37-SNAPSHOT</version>
 
   <packaging>pom</packaging>
   <name>SLF4J</name>
@@ -34,7 +34,7 @@
 
   <properties>
     <!-- yyyy-MM-dd'T'HH:mm:ss'Z' -->
-    <project.build.outputTimestamp>2022-02-08T13:31:00Z</project.build.outputTimestamp>    
+    <project.build.outputTimestamp>2025-10-26T14:15:35Z</project.build.outputTimestamp>    
 
     <required.jdk.version>1.5</required.jdk.version>
     <maven.compiler.source>${required.jdk.version}</maven.compiler.source>
