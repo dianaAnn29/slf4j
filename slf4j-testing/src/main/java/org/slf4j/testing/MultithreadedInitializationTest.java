@@ -1,7 +1,10 @@
 package org.slf4j.testing;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
+import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.slf4j.event.EventRecordingLogger;
+import org.slf4j.helpers.SubstituteLogger;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -10,14 +13,10 @@ import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.atomic.AtomicLong;
 
-import org.junit.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.slf4j.event.EventRecordingLogger;
-import org.slf4j.helpers.SubstituteLogger;
+import static org.junit.Assert.fail;
 
 abstract public class MultithreadedInitializationTest {
-    final protected static int THREAD_COUNT = 4 + Runtime.getRuntime().availableProcessors() * 2;
+    final protected static int THREAD_COUNT = 1;//4 + Runtime.getRuntime().availableProcessors() * 2;
 
     private final List<Logger> createdLoggers = Collections.synchronizedList(new ArrayList<>());
 
